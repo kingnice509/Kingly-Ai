@@ -1,0 +1,657 @@
+==============================================================================
+KINGLY AI - ULTIMATE BOLT.NEW / LOVABLE PROMPT v3.0
+Copy and paste this entire text into Bolt.new or Lovable.dev
+==============================================================================
+
+PROJECT: KINGLY AI MUSIC STUDIO & CREATOR ECONOMY PLATFORM
+VERSION: 3.0 Ultimate
+OWNER: Kai
+
+==============================================================================
+COMPLETE PROJECT SPECIFICATION
+==============================================================================
+
+BUILD A COMPLETE AI-POWERED MUSIC CREATION AND CREATOR ECONOMY PLATFORM CALLED "KINGLY AI"
+
+OVERVIEW:
+Kingly AI is NOT just an AI music generator. It's a complete ecosystem where musicians, producers, and creators can:
+- Create music (lyrics, beats, songs) with AI assistance
+- Stream and discover music
+- Buy and sell beats/lyrics in marketplace
+- Earn money from multiple revenue streams
+- Manage wallet and direct bank withdrawals
+- Build their creator community
+
+CORE FEATURES TO BUILD:
+
+1. USER AUTHENTICATION & PROFILES
+   - Email/password registration & login
+   - Google OAuth login
+   - Apple Sign-In
+   - Phone number OTP login
+   - Two-Factor Authentication (2FA)
+   - User profiles with:
+     * Display name, username, bio
+     * Profile photo
+     * Country, language
+     * Verification badge
+     * Followers/following count
+     * Total earnings display
+     * Wallet balance
+     * Music library
+     * Playlists
+     * Download/purchase history
+
+2. AI MUSIC STUDIO (Main feature)
+   Generate music with AI including:
+   - AI Lyrics Generator: Write lyrics based on prompts, genre, mood
+   - AI Beat Generator: Create beats with customizable BPM, genre, mood
+   - AI Song Composer: Generate complete songs
+   - AI Melody/Chorus Generator
+   - Album Cover Generator
+   - Song Title Generator
+   - Hashtag Generator
+   - Lyrics improvement tools (improve, rewrite, shorten, extend)
+   - Rhyme Assistant
+   
+   Controls & Options:
+   - Genre selector (Afrobeat, Hip Hop, Trap, R&B, Pop, Soul, Reggae, etc.)
+   - Mood/Emotion selector (Happy, Sad, Energetic, Calm, etc.)
+   - Tempo slider (60-180 BPM)
+   - Language selector (English, Hausa, Arabic, French, Yoruba, Igbo, Spanish, Portuguese, Swahili)
+   - Voice style options
+   - Style and mood presets
+
+3. MUSIC STREAMING & LIBRARY
+   - Upload music files (MP3, WAV, FLAC)
+   - Stream music with web player
+   - Download music (after payment if marketplace item)
+   - View play count, likes, downloads
+   - Create and manage playlists
+   - Browse trending music
+   - Explore by genre, mood, country
+   - Search music by title, artist, genre
+   - Like/unlike tracks
+   - Comment on music
+   - Share music to social media
+
+4. MARKETPLACE - BEATS
+   - Browse beats marketplace
+   - Filter by: Genre, mood, tempo, price, creator
+   - Preview beats before purchase
+   - Beat details: BPM, duration, genre, mood, creator info
+   - One-click purchase with wallet
+   - License types: Standard, Exclusive, Premium
+   - Price range: ₦1,000 to ₦50,000+
+   - Royalty information for artists
+   - Rating & reviews
+   - Download after purchase
+   - Creator earnings per beat sale
+
+5. MARKETPLACE - LYRICS
+   - Browse lyrics marketplace
+   - Filter by: Genre, mood, language, price
+   - Preview lyrics
+   - Purchase licenses
+   - Download after payment
+   - Creator earnings per lyrics sale
+
+6. WALLET & PAYMENT SYSTEM
+   Wallet Features:
+   - Display current balance
+   - View available credits
+   - Transaction history with filters
+   - Deposit funds
+   - Withdraw funds
+   - Pending withdrawal status tracking
+   - Completed withdrawal history
+   - View referral earnings
+   - View subscription payments
+   
+   Payment Gateways Integration:
+   - Paystack (Primary)
+   - Flutterwave (Alternative)
+   - Stripe (International)
+   - Apple Pay (iOS)
+   - Google Pay (Android)
+   - Bank Transfer (Direct withdrawals)
+   
+   Direct Bank Withdrawal Process:
+   1. User enters bank details (bank name, account number)
+   2. System verifies account holder name
+   3. User confirms withdrawal amount
+   4. System processes transfer
+   5. Funds appear in user's bank account within 24 hours
+   6. User can track withdrawal status
+
+7. CREATOR MONETIZATION & EARNINGS
+   Creators earn from:
+   - Music Streams: ₦0.05 - ₦0.50 per stream
+   - Downloads: Direct sales
+   - Beat Marketplace Sales: Commission-based
+   - Lyrics Marketplace Sales: Commission-based
+   - Premium Revenue Sharing: From subscription
+   - Referral Bonuses: 10% on referred users' purchases
+   - Ads Revenue Sharing: 50/50 with platform
+   - Fan Tips: Direct tips from listeners (100%)
+   - Sponsored Content: Brand partnerships
+   
+   Creator Dashboard Shows:
+   - Total earnings
+   - Monthly earnings
+   - Breakdown by revenue source
+   - Top performing tracks
+   - Trending status
+   - Growth charts
+
+8. ADMIN DASHBOARD
+   Only accessible to admin users. Show:
+   - Total users count
+   - Online users count
+   - Total revenue (daily, weekly, monthly, yearly)
+   - Total withdrawals (completed, pending)
+   - Total deposits
+   - Premium users count
+   - AI API usage metrics
+   - Server health status
+   - User management (view, edit, block, verify)
+   - Content reports and moderation
+   - Copyright claim handling
+   - Analytics and charts
+   - Payment transaction logs
+   - Withdrawal request reviews
+
+9. DASHBOARD & NAVIGATION
+   Main navigation menu:
+   - Home: Feed with trending music, recommendations
+   - Explore: Browse by genre, mood, creator
+   - Trending: Real-time trending tracks
+   - AI Studio: Music generation tools
+   - Marketplace: Beats and lyrics marketplace
+   - Wallet: Payment and earnings management
+   - Notifications: Activity notifications
+   - Messages: Direct messaging
+   - Profile: User profile and settings
+   - Admin (for admins): Admin dashboard
+
+10. DESIGN & THEME
+    Color Scheme:
+    - Primary: Black (#000000)
+    - Secondary: Gold (#FFD700)
+    - Accent: Electric Red (#FF0000)
+    - Tertiary: Orange (#FF8C00)
+    - Background: Dark theme
+    
+    Design Style:
+    - Glass-morphism UI (frosted glass effect cards)
+    - Modern, premium animations
+    - Dark theme throughout
+    - Responsive (mobile-first)
+    - Smooth transitions
+    - Professional layout
+
+11. SUPPORTED LANGUAGES
+    - English
+    - Hausa
+    - Arabic
+    - French
+    - Yoruba
+    - Igbo
+    - Spanish
+    - Portuguese
+    - Swahili
+    (Add language selector in settings)
+
+12. SUPPORTED PLATFORMS
+    - Desktop (Windows, Mac, Linux)
+    - Mobile (iOS, Android)
+    - Tablets
+    - All modern browsers (Chrome, Firefox, Safari, Edge)
+
+==============================================================================
+TECHNICAL REQUIREMENTS
+==============================================================================
+
+DATABASE SCHEMA (Use these table structures):
+
+users:
+- id (UUID)
+- email, username (unique)
+- password_hash
+- display_name, bio, profile_photo_url
+- country, language, phone_number
+- verification_badge, two_factor_enabled
+- followers_count, following_count
+- total_earnings
+- created_at, updated_at
+
+wallets:
+- id (UUID)
+- user_id (unique reference to users)
+- balance, credits
+- currency (NGN)
+- total_earned, total_spent
+- pending_withdrawal
+- created_at, updated_at
+
+transactions:
+- id (UUID)
+- user_id, wallet_id
+- type (deposit, withdrawal, purchase, earning, referral)
+- amount, currency, status
+- payment_method, gateway
+- reference_id (unique), description
+- created_at, updated_at
+
+music_library:
+- id (UUID)
+- user_id
+- title, description, genre, mood
+- tempo, bpm, duration_seconds
+- audio_url, cover_art_url
+- lyrics, language
+- music_type (original, ai_generated, uploaded)
+- visibility (public, private, unlisted)
+- stream_count, download_count, like_count
+- created_at, updated_at
+
+marketplace_beats:
+- id (UUID)
+- creator_id
+- title, genre, mood, tempo, bpm
+- preview_url, full_beat_url, cover_art_url
+- price, exclusive, license_type
+- royalty_percentage
+- sales_count, downloads_count
+- rating, review_count
+- visibility (published, draft)
+- created_at, updated_at
+
+marketplace_lyrics:
+- id (UUID)
+- creator_id
+- title, lyrics, genre, mood, language
+- price, license_type
+- royalty_percentage
+- sales_count, rating, review_count
+- visibility (published, draft)
+- created_at, updated_at
+
+purchases:
+- id (UUID)
+- buyer_id, seller_id
+- product_type (beat, lyrics)
+- product_id
+- price, currency, license_type
+- download_url, expires_at
+- purchase_date, status
+
+playlists:
+- id (UUID)
+- user_id
+- title, description
+- cover_art_url
+- visibility (private, public)
+- music_count, like_count
+- created_at, updated_at
+
+playlist_items:
+- id (UUID)
+- playlist_id, music_id
+- order_index
+- added_at
+
+followers:
+- id (UUID)
+- follower_id, following_id (unique combination)
+- created_at
+
+notifications:
+- id (UUID)
+- user_id
+- type (purchase, follow, comment, like, message)
+- title, message
+- related_user_id, related_item_id
+- read (boolean)
+- created_at
+
+messages:
+- id (UUID)
+- sender_id, recipient_id
+- content, read (boolean)
+- created_at
+
+bank_details:
+- id (UUID)
+- user_id (unique)
+- bank_name, account_number
+- account_holder_name
+- routing_number, account_type
+- verified (boolean)
+- created_at, updated_at
+
+==============================================================================
+KEY FEATURES IMPLEMENTATION DETAILS
+==============================================================================
+
+AI MUSIC GENERATION:
+- Integrate with OpenAI API for lyrics generation
+- Integrate with Replicate API (MusicGen model) for beat/music generation
+- Real-time preview of generated content
+- Save generated content to user's library
+- Option to regenerate, edit, or refine
+
+PAYMENT PROCESSING:
+- Integrate Paystack for payments (webhook for payment confirmation)
+- Handle successful payments: Update wallet balance
+- Process failed payments: Show error message
+- Track all transactions in database
+
+DIRECT BANK WITHDRAWAL:
+1. User fills bank details form
+2. System validates account using Paystack/bank API
+3. Upon verification, system processes withdrawal
+4. Update transaction status to "pending"
+5. Once bank processes (24 hours), update to "completed"
+6. Send confirmation email to user
+
+USER AUTHENTICATION:
+- Hash passwords with bcrypt
+- Generate JWT tokens for session management
+- Implement refresh token rotation
+- Support OAuth (Google, Apple) using Passport.js
+- OTP via SMS/email for phone login
+- 2FA with authenticator app
+
+MARKETPLACE COMMISSION:
+- Platform takes 10-15% commission on sales
+- Creator receives 85-90% of sale price
+- Payment gateway takes 1.5-3% fee
+- Track earnings in real-time
+
+NOTIFICATIONS:
+- Real-time notifications for purchases, follows, comments
+- Email notifications for important events
+- In-app notification bell with badge count
+- Notification preferences in settings
+
+SEARCH & DISCOVERY:
+- Search by title, artist, genre, mood
+- Trending algorithms (based on plays, likes, downloads)
+- Recommendations based on listening history
+- Browse by genre, mood, country
+- Hashtag discovery
+
+==============================================================================
+PAGES & SCREENS TO BUILD
+==============================================================================
+
+1. LANDING PAGE
+   - Hero section with CTA
+   - Feature highlights
+   - How it works section
+   - Pricing info
+   - Call to action buttons
+
+2. AUTHENTICATION PAGES
+   - Sign up page
+   - Login page
+   - Password reset page
+   - 2FA verification page
+   - OTP verification page
+
+3. DASHBOARD / HOME PAGE
+   - Navigation menu
+   - Trending music feed
+   - Recommended music
+   - Recently played
+   - Quick action buttons
+
+4. AI STUDIO PAGE
+   - Generator selector (lyrics, beats, songs, etc.)
+   - Prompt input area
+   - Genre/mood/language selectors
+   - Generate button
+   - Preview player
+   - Save to library button
+   - Edit/regenerate options
+
+5. MARKETPLACE PAGES
+   - Beats marketplace
+     * Grid of beat cards
+     * Filters (genre, mood, price, tempo)
+     * Sort options
+     * Beat preview player
+     * Creator info
+     * Purchase button
+   - Lyrics marketplace
+     * Similar layout to beats
+     * Text preview
+     * Purchase option
+
+6. MUSIC LIBRARY PAGE
+   - My Music section (uploads + generated)
+   - Playlists section
+   - Likes/Favorites
+   - Downloads
+   - Purchases
+   - Recent history
+   - Upload new music button
+
+7. WALLET PAGE
+   - Balance display
+   - Credits display
+   - Deposit button
+   - Withdraw button
+   - Transaction history table
+   - Bank details form
+   - Withdrawal status tracking
+
+8. PROFILE PAGE
+   - User info display/edit
+   - Profile photo upload
+   - Bio edit
+   - Followers/Following lists
+   - User's music library
+   - Earnings summary
+   - Settings link
+
+9. SETTINGS PAGE
+   - Language preference
+   - Theme preference
+   - Privacy settings
+   - Security settings (2FA, password change)
+   - Email preferences
+   - Account deletion option
+
+10. ADMIN DASHBOARD
+    - Dashboard with charts and metrics
+    - Users management table
+    - Revenue tracking
+    - Withdrawal requests with approve/deny buttons
+    - Content reports table
+    - Analytics and charts
+
+11. USER PROFILE (View Other Users)
+    - User info
+    - Music library
+    - Followers count
+    - Follow button
+    - Message button
+    - User's marketplace items
+
+12. SEARCH RESULTS PAGE
+    - Results for music
+    - Results for users
+    - Filter options
+    - Sort options
+
+==============================================================================
+API ENDPOINTS TO IMPLEMENT
+==============================================================================
+
+AUTHENTICATION:
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/google-callback
+POST /api/auth/apple-callback
+POST /api/auth/phone-login
+POST /api/auth/verify-otp
+POST /api/auth/forgot-password
+POST /api/auth/reset-password
+POST /api/auth/2fa-enable
+POST /api/auth/2fa-verify
+GET /api/auth/me
+POST /api/auth/logout
+
+USERS:
+GET /api/users/:id
+PUT /api/users/:id
+GET /api/users/:id/followers
+POST /api/users/:id/follow
+DELETE /api/users/:id/follow
+GET /api/users/search
+
+MUSIC:
+POST /api/music/upload
+GET /api/music
+GET /api/music/:id
+PUT /api/music/:id
+DELETE /api/music/:id
+POST /api/music/:id/like
+DELETE /api/music/:id/like
+GET /api/music/:id/download
+GET /api/music/trending
+GET /api/music/explore
+
+AI STUDIO:
+POST /api/ai/generate-lyrics
+POST /api/ai/generate-beat
+POST /api/ai/generate-song
+POST /api/ai/generate-melody
+POST /api/ai/improve-lyrics
+POST /api/ai/translate-lyrics
+GET /api/ai/usage
+
+MARKETPLACE:
+GET /api/marketplace/beats
+POST /api/marketplace/beats
+GET /api/marketplace/beats/:id
+GET /api/marketplace/lyrics
+POST /api/marketplace/lyrics
+GET /api/marketplace/lyrics/:id
+POST /api/marketplace/purchase
+GET /api/marketplace/purchases
+
+WALLET:
+GET /api/wallet
+POST /api/wallet/deposit
+POST /api/wallet/withdraw
+GET /api/wallet/transactions
+POST /api/wallet/bank-details
+GET /api/wallet/bank-details
+PUT /api/wallet/bank-details
+
+PLAYLISTS:
+POST /api/playlists
+GET /api/playlists
+GET /api/playlists/:id
+PUT /api/playlists/:id
+DELETE /api/playlists/:id
+POST /api/playlists/:id/add-music
+DELETE /api/playlists/:id/music/:musicId
+
+NOTIFICATIONS & MESSAGES:
+GET /api/notifications
+POST /api/notifications/read/:id
+GET /api/messages/:userId
+POST /api/messages/:userId
+
+ADMIN:
+GET /api/admin/dashboard
+GET /api/admin/users
+GET /api/admin/reports
+POST /api/admin/reports/:id/action
+GET /api/admin/revenue
+GET /api/admin/withdrawals
+
+==============================================================================
+MOCK DATA & INTEGRATION
+==============================================================================
+
+For AI Music Generation:
+- Use OpenAI GPT-4 API for lyrics (or mock with sample lyrics)
+- Use Replicate API for music generation (or mock with sample audio URLs)
+- Fallback to mock data for testing if APIs unavailable
+
+Payment Mock:
+- Simulate Paystack integration with mock payment flow
+- Show payment success/failure screens
+- Update wallet balance on successful payment
+
+Database:
+- Use Firebase Firestore or Supabase for database
+- Or mock data with local state for rapid development
+- Ensure all tables match schema above
+
+File Storage:
+- Use AWS S3 or Firebase Storage for audio/image uploads
+- Or mock file uploads in development
+
+==============================================================================
+IMPORTANT NOTES
+==============================================================================
+
+COMPLIANCE:
+- Implement content moderation
+- Copyright protection mechanisms
+- DMCA compliance for user-generated content
+- Terms of Service and Privacy Policy pages
+- Age verification if needed
+
+SECURITY:
+- Hash all passwords with bcrypt
+- Use HTTPS only
+- Implement rate limiting
+- Validate all inputs
+- Protect sensitive data
+- Use environment variables for secrets
+- Implement CORS properly
+
+MOBILE RESPONSIVENESS:
+- All pages must work perfectly on mobile
+- Touch-friendly buttons and inputs
+- Responsive images and media
+- Mobile navigation menu (hamburger)
+
+PERFORMANCE:
+- Optimize images
+- Lazy load content
+- Cache where appropriate
+- Minimize API calls
+- Use CDN for assets
+
+ACCESSIBILITY:
+- Proper alt text on images
+- Keyboard navigation support
+- Color contrast compliance
+- Screen reader friendly
+- Semantic HTML
+
+==============================================================================
+BUILD THIS COMPLETE, PRODUCTION-READY KINGLY AI PLATFORM
+==============================================================================
+
+Start with authentication, then build the dashboard, then add AI studio, then marketplace, then wallet system.
+
+Make it beautiful with the dark theme, glass-morphism UI, and smooth animations.
+
+Include proper error handling, loading states, and user feedback.
+
+Add all tables, routes, and features as specified.
+
+This will be a fully functional music creation and creator economy platform ready for real users.
+
+==============================================================================
+END OF PROMPT
+==============================================================================
